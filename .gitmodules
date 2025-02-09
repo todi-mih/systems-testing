@@ -1,3 +1,6 @@
-[submodule "python-mini-project"]
+[submodule "laboratories/static-checking"]
 	path = laboratories/static-checking
-	url = https://github.com/ndleah/python-mini-project.git
+	url = git@github.com:ndleah/python-mini-project.git
+[submodule "laboratories/git-github"]
+	path = laboratories/git-github
+	url = git@github.com:tsc-cs-pub-ro/git-lab.git
