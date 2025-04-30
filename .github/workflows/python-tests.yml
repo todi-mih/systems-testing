@@ -1,25 +1,22 @@
-name: Run Pytest
+name: Run Python Unit Tests
 
 on:
   push:
-    branches:
-      - main  # Run on every push to main
+    branches: [main]
   pull_request:
-    branches:
-      - main  # Also run on PRs to main
+    branches: [main]
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+    - uses: actions/checkout@v3
 
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.10'  # Or 3.x version you want
+        python-version: '3.10'
 
     - name: Install dependencies
       run: |
